@@ -19,7 +19,7 @@ def create_front_matter(archive_s_form, archive_p_form, archive_item_value, arch
 title: {archive_item_value}
 {archive_s_form}: "{archive_item_value}"
 layout: archive-{archive_p_form}
-permalink: "{archive_s_form}/{archive_value_escaped}"
+permalink: "blog/archives/{archive_p_form}/{archive_value_escaped}"
 ---
 '''
     return front_matter_template
